@@ -44,6 +44,9 @@ set(CMAKE_BUILD_TYPE Debug)
 project(test_cpp)
 
 add_executable (main main.cpp)
+# 如果有多个文件，一个一个写不方便，可以用以下简便写法
+# aux_source_directory(. SOURCES)
+# add_executable(main ${SOURCES})
 ```
 
 ### 5. 测试一下 CMake 编译
